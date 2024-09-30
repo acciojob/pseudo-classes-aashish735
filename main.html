@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <title>My Webpage</title>
+  <style>
+    :root {
+      background-color: rgb(135, 206, 235);
+    }
+
+    article {
+      display: block;
+    }
+
+    article:first-child p:first-child {
+      color: white;
+      background-color: black;
+    }
+
+    article:nth-child(2) p:nth-child(2) {
+      color: black;
+      background-color: white;
+    }
+
+    article:last-child p:last-child {
+      color: red;
+      background-color: white;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      width: 50%;
+    }
+
+    li {
+      background-color: gray;
+      padding: 10px;
+    }
+
+    li:nth-child(odd) {
+      background-color: white;
+    }
+
+    li:first-child, li:last-child {
+      font-size: 22px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <article>
+    <p>First Item</p>
+    <p>Second Item</p>
+    <p>Third Item</p>
+  </article>
 
+  <ul>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+    <li>Fourth Item</li>
+    <li>Fifth Item</li>
+  </ul>
 </body>
-
 </html>
